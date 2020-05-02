@@ -1,0 +1,31 @@
+version: '3'
+services:
+  webos:
+    image: aayu-web
+    container_name: webA
+    volumes:
+      - web_storage_new:/var/www/html
+    command: bash
+    tty: true
+    ports: 
+        - 1234:80
+    depends_on:
+        - dbos
+
+
+  dbos:
+    image: mysql:5.7
+    container_name: dbos
+    volumes:
+      - mysql_storage_new:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: redhat
+      MYSQL_USER: root
+      MYSQL_PASSWORD: redhat
+      MYSQL_DATABASE: project
+
+ 
+volumes:
+  mysql_storage_new:
+  web_storage_new:
