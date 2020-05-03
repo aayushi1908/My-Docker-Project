@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<style>
+    .fs{
+        background-color: #101010;
+        color: #9d9d9d;
+        padding: 10px 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 15px;
+    }
+    .rs{
+        margin-left: 350px;
+    }
+    body{
+        background-image: url("img/images (2).jpeg");
+    }
+
+</style>
+<body style="">
+<div class="container">
+    <nav class="nav navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand"> Empowering women </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Settings </a> </li>
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Home</a> </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br><br><br>
+
+    <div class="container">
+        <div class="row rs">
+            <div class="col-xs-6">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h4>SIGNUP/REGISTER</h4>
+                    </div>
+                    <div class="panel-body">
+
+                        <div class="form-container sign-up-container">
+
+                            <form action="myphp.php" method="post">
+                                <div class="form-group">
+                                    <label for name="firstname"> First Name <br>
+                                        <input type="firstname" placeholder="Enter First Name" name="firstname" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for name="lastname"> Last Name <br>
+                                        <input type="lastname" placeholder="Enter First Name" name="lastname" class="form-control">
+                                <div class="form-group">
+                                    <label for name="email"> Email <br>
+                                        <input type="email" placeholder="Email" name="email" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for name="password"> Password <br>
+                                        <input type="password" placeholder="Enter password" name="password" class="form-control">
+                                </div>
+                                <button type="submit" class="btn btn-primary"> <a href="Home.html" style="color: white; text-decoration: none"> Signup </a></button>
+                            </form>
+
+                        </div>
+                    </div>
+                    <div class="panel-footer">
+                        <p>Already registered?</p><a href="#" style="color: dodgerblue; text-decoration: none">Login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--<footer class="fs">
+        <div class="container">
+            Copyright © Empowering women | All Rights Reserved
+        </div>
+    </footer>-->
+</div>
+</body>
+</html>
